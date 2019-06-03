@@ -580,8 +580,8 @@ ul {
 .Testimonial .blog .carousel .carousel-inner {
   width: 992px; }
   .Testimonial .blog .carousel .carousel-inner .carousel-item {
-    padding-bottom: 60px;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 60px; }
     .Testimonial .blog .carousel .carousel-inner .carousel-item span {
       font-size: 24px;
       padding: 33px 0;
