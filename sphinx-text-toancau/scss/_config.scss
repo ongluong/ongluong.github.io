@@ -1,0 +1,247 @@
+body{
+	p{
+		margin:0;
+	}
+	font-familly:'lato',sans-serif;
+	background-color:#f2f2f2;
+}
+@mixin mixin-bg-title{
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	width: 100%;
+	background-image: url('/images/bg_header.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 0;
+	background-position: right -23px top 0px;
+	&::after{
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #000;
+		opacity: 0.6;
+		z-index: 1;
+	}
+	h2{
+		text-transform: uppercase;
+		font-size: 30px;
+		color: #fff;
+		font-weight: 700;
+		line-height: 24.13px;
+		padding: 97px 0 35px;
+		letter-spacing: 1.1px;
+		margin-left: -3px;
+		position: relative;
+		z-index: 2;
+		word-spacing: 0.6px;
+		@media only screen and(max-width: 576px){
+			font-size: 20px;
+		}
+	}
+}
+@mixin mixin-training{
+	padding-top: 19px;
+	.index-training{
+		h6{
+			font-weight: bold;
+			font-family: 'Lato',sans-serif;
+			color: #212529;
+			text-transform: uppercase;
+			padding-bottom:13.5px;
+			border-bottom: 1px solid #dcdcdc;
+			margin-bottom: 0;
+		}
+		ul{
+			padding-left: 0;
+			margin-bottom: 14px;
+			li{
+				list-style-type: none;
+				a{
+					display: block;
+					padding: 10px 0;
+					text-transform: uppercase;
+					font-size: 14px;
+					font-size: 'Lato',sans-serif;
+					color: #212529;
+					border-bottom: 1px solid #dcdcdc;
+					text-decoration: none;
+					word-spacing: 1px;
+					letter-spacing: 0.5px;
+					&:hover{
+						color:#f0c08e;
+					}
+				}
+			}
+			li:last-child{
+				a{
+					margin-bottom: 14.5px;
+					border-bottom:none;
+				}
+			}
+		}
+	}
+	.program-training{
+		padding: 0 0px 16.5px 16px;
+		background-color: #e3e3e3;
+		margin-right: -15px;
+		h6{
+			font-size: 18px;
+			font-family: 'Lato',sans-serif;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #373737;
+			padding: 20.5px 0 4.5px 1px;
+			margin-bottom: 0;
+			word-spacing: 2px;
+		}
+		p{
+			font-size: 13px;
+			font-family: 'Lato',sans-serif;
+			color: #373737;
+			word-spacing: 1.4px;
+			line-height: 1.9;
+		}
+		ul{
+			padding-top: 10px;
+			padding-left: 0;
+			margin-bottom: 12px;
+			padding-right: 15px;
+			li{
+				list-style-type: none;
+				border-left: 5px solid #201f1f;
+				border-bottom: 2px solid #fff;
+				a{
+					text-align: left;
+					display: block;
+					text-decoration: none;
+					padding: 10px 0 14px 12px;
+					background-color: #8a8a8a;
+					color: #fff;
+					font-size: 14px;
+					font-family: 'Lato',sans-serif;
+					text-transform: initial;
+					word-spacing: 0.6px;
+					letter-spacing: 0.4px;
+					margin-right: 0;
+				}
+			}
+			li:first-child{
+				a{
+					padding: 12px 0 14px 12px;
+				}
+			}
+		}
+		a{
+			text-transform: uppercase;
+			color: #201f1f;
+			font-size: 16px;
+			padding: 7px 0px 6px 0;
+			word-spacing: 1.9px;
+			display: block;
+			text-align: center;
+			background-color: #f09910;
+			text-decoration: none;
+			margin-right: 15px;
+			&:hover{
+				background-color:#edba69;
+			}
+		}
+	}
+}
+@mixin mixin-reponsive-content{
+	@media screen and(max-width: 768px){
+	.program{
+	     .home{
+	      flex:0 0 100%;
+	      max-width: 100%;
+	    }
+	    .educate{
+	      flex: 0 0 100%;
+	      max-width: 100%;
+	      .container{
+	        display: flex;
+	        flex-wrap: wrap;
+	        .training{
+	          flex: 0 0 100%;
+	          max-width: 100%;
+	        }
+	        .super-student{
+	          margin-bottom: 20px;
+	          .img{
+	            &::after{
+	              top:105%;
+	            }
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+	@media screen and(min-width: 768px){
+	    .program{
+	     .home{
+	      flex:0 0 100%;
+	      max-width: 100%;
+	      }
+	    .educate{
+	      flex: 0 0 100%;
+	      max-width: 100%;
+	      .container{
+	        display: flex;
+	        .training{
+	          flex: 0 0 70%;
+	          max-width: 70%;
+	          margin-bottom: 30px;
+	        }
+	        .super-student{
+	          flex: 0 0 30%;
+	          max-width: 30%;
+	          margin-bottom: 0;
+	          .img{
+	            &::after{
+	              top:115%;
+	            }
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+	@media screen and(min-width: 992px){
+	    .program{
+	     .home{
+	      flex:0 0 72.8%;
+	      max-width: 72.8%;
+	    }
+	    .educate{
+	      flex: 0 0 27.2%;
+	      max-width: 27.2%;
+	      .container{
+	        display: flex;
+	        flex-wrap: wrap;
+	        .training{
+	          flex: 0 0 100%;
+	          max-width: 100%;
+	          margin-bottom: 0;
+	        }
+	        .super-student{
+	          flex: 0 0 100%;
+	          max-width: 100%;
+	          margin-bottom: 0;
+	          .img{
+	            &::after{
+	              top:111%;
+	              left: 23%;
+	            }
+	          }
+	        }
+	      }
+	    }
+	  }
+	}
+}

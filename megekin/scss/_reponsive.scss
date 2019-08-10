@@ -1,0 +1,289 @@
+
+@media screen and(max-width:768px){
+	header{
+		.header-top{
+			.header-left{
+				flex: 0 0 100%;
+				max-width: 100%;
+				.logo{
+					text-align: center;
+				}
+			}
+			.header-right{
+				flex: 0 0 100%;
+				max-width: 100%;
+				ul{
+					flex-direction: column;
+					text-align: center;
+					li{
+						margin-left:0;
+					}
+				}
+
+			}
+		}
+		
+	}
+}
+@media screen and(max-width:576px){
+	.banner{
+		.content{
+			padding-top: 4rem;
+			padding-bottom: 4.9rem;
+			p{
+				padding: 1.1rem 0 3.6rem;
+			}
+			.video{
+				padding: 0;
+				video{
+					width: 100%;
+					height: 24.4rem;
+				}
+			}
+		}
+	}
+	.calendar-text{
+		.calendar{
+			padding: 0;
+			.button{
+				padding: 0 5rem;
+			}
+		}
+		
+	}
+	.banner-center{
+		.content{
+			.text{
+				flex:0 0 100%;
+				max-width: 100%;
+				h5{
+					span{
+						font-size: 3rem;
+						margin-right: 0.8rem;
+					}
+				}
+			}
+			.button{
+				flex:0 0 100%;
+				max-width: 100%;
+				.get-started-now{
+					padding-left: 0;
+					padding: 5.5rem 0;
+				}
+			}
+		}
+	}
+	footer{
+		.news-leter{
+			flex-wrap: wrap;
+			.text{
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.form{
+				padding-top: 2rem;
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding-left: 0;
+				.form-group{
+					width: 100%;
+					button{
+						margin-top: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+}
+@media screen and(min-width:576px){
+	
+	.banner{
+		.content{
+			padding-top: 4rem;
+			padding-bottom: 4.9rem;
+			p{
+				padding: 1.1rem 0 3.6rem;
+
+			}
+			.video{
+				padding: 0;
+				video{
+					width: 100%;
+					height: 24.4rem;
+				}
+			}
+		}
+	}
+	.calendar-text{
+		.calendar{
+			padding: 0;
+			.button{
+				padding: 0 5rem;
+			}
+		}
+		
+	}
+	.banner-center{
+		.content{
+			.text{
+				flex:0 0 100%;
+				max-width: 100%;
+				h5{
+					span{
+						font-size: 3rem;
+						margin-right: 0.8rem;
+					}
+				}
+			}
+			.button{
+				flex:0 0 100%;
+				max-width: 100%;
+				.get-started-now{
+					padding-left: 0;
+					padding: 5.5rem 0;
+				}
+			}
+		}
+	}
+	footer{
+		.news-leter{
+			flex-wrap: wrap;
+			.text{
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			.form{
+				padding-top: 2rem;
+				flex: 0 0 100%;
+				max-width: 100%;
+				padding-left: 0;
+				.form-group{
+					width: 100%;
+					button{
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 991px){
+	.banner{
+		.content{
+			padding-top: 7rem;
+			padding-bottom: 7.9rem;
+			h1{
+				font-size: 2.4rem;
+			}
+			p{
+				
+				font-size: 3.6rem;
+				padding: 1.1rem 0 3.6rem;
+				&:after{
+					content:'';
+					width: 100%;
+					height: 2px;
+					background-color:#4ca84a;
+					display: block;
+				}
+			}
+			.video{
+				padding:0 14rem;
+				video{
+					width: 100%;
+					height: 47.4rem;
+				}
+			}
+		}
+	}
+	.calendar-text{
+		
+			.calendar{
+				padding: 0 28rem;
+				.button{
+				padding: 0 10rem;
+		}
+			}
+	}
+	.banner-center{
+		.content{
+
+			.text{
+				max-width: 60%;
+				flex:0 0 60%;
+				h5{
+				padding: 0;
+				color: #fff;
+				span{
+					font-size: 4rem;
+					color: #4fba47;
+					    margin-left: 14px;
+					    
+					    margin-right: 1.8rem;
+				}
+			}
+			h5:last-child{
+				word-spacing: 1px;
+			    letter-spacing: 0.6px;
+			    line-height: 4.8rem;
+				span{
+					margin-left: -3px;
+    				margin-right: 6px;
+				}
+			}
+			}
+			.button{
+				max-width: 40%;
+				flex: 0 0 40%;
+				.get-started-now{
+				padding: 11.5rem 0;
+				text-align: center;
+				padding-left: 12.5rem;
+				a{
+					font-size: 1.8rem;
+					padding: 2rem 2.9rem;
+					display: inline-block;
+				}
+			}
+			}
+		}
+	}
+	footer{
+		.news-leter{
+			.text{
+				flex: 0 0 50%;
+				max-width: 50%;
+			}
+			.form{
+				flex: 0 0 50%;
+				max-width: 50%;
+				justify-content: end;
+				flex-direction: row;
+				.form-group{
+					margin-bottom: 0;
+    				margin-left: 0;
+					button{
+						margin-top: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and(min-width: 1200px){
+	footer{
+		.news-leter{
+			.form{
+				.form-group{
+					margin-bottom: 17px;
+    				margin-left: 77px;
+					button{
+						margin-top: 0;
+					}
+				}
+			}
+		}
+	}
+}

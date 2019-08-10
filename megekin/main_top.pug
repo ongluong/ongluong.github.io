@@ -1,0 +1,123 @@
+extends _layouts/layout
+
+block content
+	.banner
+		.container
+			.content
+				.text
+					h1 Get instant access to all our WordPress themes and plugins for 
+					p just $12/month
+				.video
+					video(controls='')
+						source(src='images/Megakin 3.mp4', type='video/mp4')
+
+	.calendar-text
+		.container
+			.text
+				.text-1
+					p Download all of Megakin's themes and plugins for only $ 12 / moth
+				.close
+					span 
+						i.far.fa-window-close
+
+			.calendar
+				.calendar-child
+					h4 Monthly membership
+					.label
+						.hot
+							span Hot
+					h3
+						sup $
+						| 12
+					h5 per month
+				.button
+					.buy-now
+						a(href='#', title='link') buy now
+	.Benefits
+		.container
+			.title
+				h5 Benefits achieved
+				p What benefits do you get when you join us?
+			.content
+				.grid
+					mixin item(src,title,content1,content2,content3)
+						.content-child
+							.images
+								.img
+									img(src=src,alt='images')
+							.text
+								h6=title
+								p= content1
+								p= content2
+								p= content3
+					+item('images/tay.png','Better ranking and lowest bouce rate','Develop with really reasonable layouts and well  organized cate','Completely suitable production to minimize  bounce rate.','Clean code, load time on web pages is significantly  optimized')
+					+item('images/xep.png','Totally original plugins and Themes','Released under General Public Licenses (GPL)','Say "NO" to the Nulled or crack version','There is no need to pay for separate licenses for each site with these topics')
+					+item('images/tay2.png','Ready to use','All themes and WordPress plugins available on',' megakin.net have been enabled so you can skip the step to activate them manually.')
+					+item('images/so8.png','No usage limitation','Just a single subscriber you already own a treasure', 'with over 2800 themes and Wp plugin and there is',' no limit on the number of websites')
+					+item('images/tay3.png','McAfee Secure: Solid security','The theme and plugin on Megakin.net are secure by McAfee Secure' ,'and verified by McAfee Secure without viruses')
+					+item('images/vang.png','Secure purchase','Guaranteed money back in 30 days, no questions asked','We are very grateful if you provide reasons to' ,'improve our service.')
+			.button
+				.Download-now
+					a(href='#',title='') Download now
+	.banner-center
+		.container
+			.content
+				.text
+					h5
+						| For only
+						span $12/month
+						| you will get access
+					h5
+						span +2800
+						| topics and Wordpress plugins with great value
+				.button
+					.get-started-now
+						a(href='#',title='') Get started now
+	.Why-choose-Megakin
+		.container
+			.title
+				h5 Why choose Megakin
+				p We have everything you need to search for your website.
+			.content
+				.grid
+					mixin item2(src,title,content)
+						.content-child
+							.images
+								.img
+									img(src=src,alt='')
+								.text
+									h6=title
+									p= content
+					+item2('images/anh1.jpg','Unlimited number of themes & plugins','Elegant, well-designed themes and powerful plugins with unlimited numbers')
+					+item2('images/anh2.jpg','Cheap price','For only $ 12 / month you have access to all your favorite themes and plugins. A cheap price')
+					+item2('images/anh3.jpg','Safe to buy','We provide safe, clean and absolutely virus-free products. You can be assured of quality service from megakin')
+	.Other-prices
+		.container
+			.title
+				h5 Other prices
+				p The price options you can choose
+			.content
+				.grid
+					.content-child
+						.top
+							h6 Semi-Annual Membership
+						.center
+							p(class='first')
+								sup $
+								| 49
+							p for 6 month
+						.bottom
+							a(href='#',title='title') 
+								| buy now
+					.content-child
+						.top
+							h6 Annual Membership
+						.center
+							p(class='first')
+								sup $
+								| 89
+							p pre 12 month
+						.bottom
+							a(href='#',title='title') 
+								| buy now
+			
